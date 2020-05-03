@@ -1,0 +1,18 @@
+$primary: hsl(180, 29%, 50%);
+$gray-bg: hsl(180, 52%, 96%);
+$gray-filter: hsl(180, 31%, 95%);
+$gray-cyan: hsl(180, 8%, 52%);
+$gray-dark-cyan: hsl(180, 14%, 20%);
+
+body {
+  background-color: $gray-bg;
+}
+
+.header {
+  height: 190px;
+  background-color: $primary;
+  background-image: url("./assets//ui/bg-header-desktop.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
