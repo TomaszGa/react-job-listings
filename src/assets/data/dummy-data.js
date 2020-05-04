@@ -2,7 +2,7 @@ const dummyData = [
   {
     id: 1,
     company: "Photosnap",
-    logo: "./images/photosnap.svg",
+    logo: "/logos/photosnap.svg",
     new: true,
     featured: true,
     position: "Senior Frontend Developer",
@@ -16,7 +16,7 @@ const dummyData = [
   {
     id: 2,
     company: "Manage",
-    logo: "./images/manage.svg",
+    logo: "/logos/manage.svg",
     new: true,
     featured: true,
     position: "Fullstack Developer",
@@ -31,7 +31,7 @@ const dummyData = [
   {
     id: 3,
     company: "Account",
-    logo: "./images/account.svg",
+    logo: "/logos/account.svg",
     new: true,
     featured: false,
     position: "Junior Frontend Developer",
@@ -46,7 +46,7 @@ const dummyData = [
   {
     id: 4,
     company: "MyHome",
-    logo: "./images/myhome.svg",
+    logo: "/logos/myhome.svg",
     new: false,
     featured: false,
     position: "Junior Frontend Developer",
@@ -60,7 +60,7 @@ const dummyData = [
   {
     id: 5,
     company: "Loop Studios",
-    logo: "./images/loop-studios.svg",
+    logo: "/logos/loop-studios.svg",
     new: false,
     featured: false,
     position: "Software Engineer",
@@ -75,7 +75,7 @@ const dummyData = [
   {
     id: 6,
     company: "FaceIt",
-    logo: "./images/faceit.svg",
+    logo: "/logos/faceit.svg",
     new: false,
     featured: false,
     position: "Junior Backend Developer",
@@ -89,7 +89,7 @@ const dummyData = [
   {
     id: 7,
     company: "Shortly",
-    logo: "./images/shortly.svg",
+    logo: "/logos/shortly.svg",
     new: false,
     featured: false,
     position: "Junior Developer",
@@ -104,7 +104,7 @@ const dummyData = [
   {
     id: 8,
     company: "Insure",
-    logo: "./images/insure.svg",
+    logo: "/logos/insure.svg",
     new: false,
     featured: false,
     position: "Junior Frontend Developer",
@@ -119,7 +119,7 @@ const dummyData = [
   {
     id: 9,
     company: "Eyecam Co.",
-    logo: "./images/eyecam-co.svg",
+    logo: "/logos/eyecam-co.svg",
     new: false,
     featured: false,
     position: "Full Stack Engineer",
@@ -134,7 +134,7 @@ const dummyData = [
   {
     id: 10,
     company: "The Air Filter Company",
-    logo: "./images/the-air-filter-company.svg",
+    logo: "/logos/the-air-filter-company.svg",
     new: false,
     featured: false,
     position: "Front-end Dev",

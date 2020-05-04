@@ -4,15 +4,69 @@ $gray-filter: hsl(180, 31%, 95%);
 $gray-cyan: hsl(180, 8%, 52%);
 $gray-dark-cyan: hsl(180, 14%, 20%);
 
+$font: "Spartan", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+  "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue";
+
+$font-weight-bold: 700;
 body {
   background-color: $gray-bg;
+  font-family: $font;
 }
 
 .header {
-  height: 190px;
+  height: 150px;
   background-color: $primary;
   background-image: url("./assets//ui/bg-header-desktop.svg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.jobs {
+  max-width: 1000px;
+  margin: 70px auto 0 auto;
+}
+
+.job-listing {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  padding: 20px 30px;
+  margin-bottom: 20px;
+  border-left: 4px solid transparent;
+  border-radius: 4px;
+  box-shadow: 4px 4px 7px transparentize($gray-cyan, 0.8);
+  &--featured {
+    border-left-color: $primary;
+  }
+  &__company {
+    color: $primary;
+    font-weight: $font-weight-bold;
+    margin-bottom: 10px;
+  }
+  &__title {
+    font-weight: $font-weight-bold;
+    margin-bottom: 10px;
+  }
+  &__logo {
+    padding-right: 25px;
+  }
+  &__tools {
+    margin-left: auto;
+    display: flex;
+  }
+  &__meta-item {
+    display: inline-block;
+    color: $gray-cyan;
+    padding-right: 10px;
+    &::after {
+      content: "•";
+      padding-left: 10px;
+    }
+    &:last-child {
+      &::after {
+        content: none;
+      }
+    }
+  }
 }

@@ -1,12 +1,13 @@
 import React from "react";
+import Job from "./Job";
 
 const Jobs = ({ listings }) => {
   return (
-    <>
+    <main className="jobs">
       {listings.map((listing) => (
-        <div>Listing</div>
+        <Job data={listing} key={listing.id}></Job>
       ))}
-    </>
+    </main>
   );
 };
 

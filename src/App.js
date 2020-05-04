@@ -9,11 +9,10 @@ function App() {
   const [listings, setListings] = useState([]);
 
   useEffect(() => {
+    //simulate asynchronous API call
     setTimeout(() => {
       setListings(dummyData);
-
-      console.log(listings);
-    }, 1000);
+    }, 200);
   }, []);
 
   return (
