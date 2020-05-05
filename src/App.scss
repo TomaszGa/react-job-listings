@@ -23,7 +23,7 @@ body {
 }
 
 .jobs {
-  max-width: 1000px;
+  max-width: 1200px;
   margin: 70px auto 0 auto;
 }
 
@@ -46,14 +46,29 @@ body {
   }
   &__title {
     font-weight: $font-weight-bold;
+    color: $gray-dark-cyan;
     margin-bottom: 10px;
   }
   &__logo {
     padding-right: 25px;
   }
-  &__tools {
+  &__tags {
     margin-left: auto;
     display: flex;
+  }
+  &__tag {
+    padding: 7px;
+    background-color: $gray-filter;
+    color: $primary;
+    border-radius: 4px;
+    font-weight: $font-weight-bold;
+    margin-right: 15px;
+    &:last-child {
+      margin-right: 0;
+    }
+    &:hover {
+      cursor: pointer;
+    }
   }
   &__meta-item {
     display: inline-block;

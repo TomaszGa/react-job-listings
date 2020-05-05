@@ -3,7 +3,7 @@ import React from "react";
 const Job = ({ data }) => {
   const languages = data.languages || [];
   const tools = data.tools || [];
-  const tagList = [data.level, data.role, ...languages, ...tools];
+  const tagList = [data.role, data.level, ...languages, ...tools];
   // console.log(tagList);
 
   const modifierClass = data.featured ? "job-listing--featured" : null;
@@ -14,7 +14,10 @@ const Job = ({ data }) => {
         <img src={process.env.PUBLIC_URL + data.logo} />
       </div>
       <div className="job-listing__details">
-        <div className="job-listing__company">{data.company}</div>
+        <div className="job-listing__company">
+          {data.company} {data.new ? <span>new</span> : null}{" "}
+          {data.featured ? <span>featured</span> : null}
+        </div>
         <div className="job-listing__title">{data.position}</div>
         <div className="job-listing__meta">
           <div className="job-listing__meta-item">{data.postedAt}</div>
@@ -22,9 +25,9 @@ const Job = ({ data }) => {
           <div className="job-listing__meta-item">{data.location}</div>
         </div>
       </div>
-      <div className="job-listing__tools">
+      <div className="job-listing__tags">
         {tagList.map((tag) => (
-          <div>{tag}</div>
+          <div className="job-listing__tag">{tag}</div>
         ))}
       </div>
     </div>
