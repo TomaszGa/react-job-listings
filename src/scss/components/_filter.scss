@@ -1,0 +1,33 @@
+.filter {
+  transform: translateY(-50px);
+  &__bar {
+    overflow: hidden;
+    height: 0;
+    opacity: 0;
+    transition: 0.3s;
+    width: $container-width;
+    background: #fff;
+    margin: 0 auto;
+  }
+  &__bar-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    height: 60px;
+  }
+  &--active {
+    .filter__bar {
+      height: auto;
+      height: 60px;
+      opacity: 1;
+    }
+  }
+
+  &__tags {
+    display: flex;
+  }
+  &__tag {
+    margin-right: 10px;
+  }
+}

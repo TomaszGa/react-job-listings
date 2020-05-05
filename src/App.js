@@ -1,12 +1,14 @@
 import React, { useState, useEffect } from "react";
 import Header from "./components/Header";
 import Jobs from "./components/Jobs";
-import "./App.scss";
+import FilterBar from "./components/FilterBar";
+import "./scss/App.scss";
 
 import dummyData from "./assets/data/dummy-data";
 
 function App() {
   const [listings, setListings] = useState([]);
+  const [filters, setFilter] = useState([]);
 
   useEffect(() => {
     //simulate asynchronous API call
@@ -18,6 +20,21 @@ function App() {
   return (
     <>
       <Header />
+      <FilterBar filters={filters} />
+      <button
+        onClick={() => {
+          setFilter(["test", "wow", "nice"]);
+        }}
+      >
+        Filter
+      </button>
+      <button
+        onClick={() => {
+          setFilter([]);
+        }}
+      >
+        Filter remove
+      </button>
       <Jobs listings={listings} />
     </>
   );
