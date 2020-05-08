@@ -8,10 +8,10 @@
   align-items: center;
   background-color: #fff;
   padding: 20px 30px;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
   border-left: 4px solid transparent;
   border-radius: 4px;
-  box-shadow: 4px 4px 7px transparentize($gray-cyan, 0.8);
+  box-shadow: $shadow;
   &--featured {
     border-left-color: $primary;
   }

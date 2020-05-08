@@ -1,5 +1,5 @@
 .filter {
-  transform: translateY(-30px);
+  transform: translateY(-36px);
   position: absolute;
   margin: 0 auto;
   left: 0;
@@ -8,30 +8,60 @@
     overflow: hidden;
     height: 0;
     opacity: 0;
-    transition: 0.3s;
+    // transition: 0.3s;
     width: $container-width;
     background: #fff;
+    border-radius: 6px;
+    box-shadow: $shadow;
     margin: 0 auto;
   }
   &__bar-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 20px;
-    height: 60px;
+    padding: 15px 45px;
+    // height: 70px;
   }
   &--active {
     .filter__bar {
       height: auto;
-      height: 60px;
+      // height: 70px;
       opacity: 1;
     }
   }
 
   &__tags {
     display: flex;
+    flex-wrap: wrap;
   }
   &__tag {
-    margin-right: 10px;
+    background-color: $gray-filter;
+    color: $primary;
+    border-radius: 4px;
+    font-weight: $font-weight-bold;
+    margin-right: 15px;
+    margin-bottom: 10px;
+    transition: 0.2s;
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+  }
+  &__tag-name {
+    padding: 0 8px;
+  }
+  &__tag-remove {
+    background-color: $primary;
+    color: #fff;
+    padding: 4px;
+    transition: 0.2s;
+    img {
+      display: block;
+      width: 25px;
+    }
+    &:hover {
+      cursor: pointer;
+      background-color: $gray-dark-cyan;
+    }
   }
 }

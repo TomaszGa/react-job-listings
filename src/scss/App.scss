@@ -10,6 +10,9 @@ $font: "Spartan", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
 $font-weight-bold: 700;
 
 $container-width: 1200px;
+
+$shadow: 4px 4px 20px transparentize($gray-cyan, 0.7);
+
 body {
   background-color: $gray-bg;
   font-family: $font;

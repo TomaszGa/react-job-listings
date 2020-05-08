@@ -9,6 +9,31 @@ import dummyData from "./assets/data/dummy-data";
 function App() {
   const [listings, setListings] = useState([]);
   const [filters, setFilters] = useState([]);
+  // const [filters, setFilters] = useState([
+  //   "test1",
+  //   "test2",
+  //   "test3",
+  //   "test4",
+  //   "test5",
+  //   "test6",
+  //   "test7",
+  //   "test8",
+  //   "test9",
+  //   "test10",
+  //   "test11",
+  //   "test12",
+  //   "test13",
+  //   "test14",
+  //   "test14",
+  //   "test14",
+  //   "test14",
+  //   "test14",
+  //   "test14",
+  //   "test14",
+  //   "test14",
+  //   "test14",
+  //   "test14",
+  // ]);
 
   useEffect(() => {
     //simulate asynchronous API call
@@ -24,6 +49,14 @@ function App() {
     setFilters(newFilters);
   };
 
+  const removeTagFromFilter = (tag) => {
+    const newFilters = filters.filter((item) => {
+      return item !== tag;
+    });
+
+    setFilters(newFilters);
+  };
+
   const clearFilters = () => {
     setFilters([]);
   };
@@ -31,7 +64,11 @@ function App() {
   return (
     <>
       <Header />
-      <FilterBar filters={filters} clearFilters={clearFilters} />
+      <FilterBar
+        filters={filters}
+        clearFilters={clearFilters}
+        removeFilter={removeTagFromFilter}
+      />
       <Jobs listings={listings} addTag={addTagToFilter} filters={filters} />
     </>
   );

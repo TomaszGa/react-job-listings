@@ -1,6 +1,8 @@
 import React from "react";
 
-const FilterBar = ({ filters, clearFilters }) => {
+import closeButton from "../assets/ui/icon-x.png";
+
+const FilterBar = ({ filters, clearFilters, removeFilter }) => {
   const modifierClass = filters.length ? "filter--active" : null;
 
   return (
@@ -10,7 +12,15 @@ const FilterBar = ({ filters, clearFilters }) => {
           <div className="filter__tags">
             {filters.map((filter) => (
               <div className="filter__tag" key={filter}>
-                {filter}
+                <div className="filter__tag-name">{filter}</div>
+                <div
+                  className="filter__tag-remove"
+                  onClick={() => {
+                    removeFilter(filter);
+                  }}
+                >
+                  <img src={closeButton} />
+                </div>
               </div>
             ))}
           </div>
