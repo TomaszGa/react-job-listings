@@ -8,7 +8,7 @@ import dummyData from "./assets/data/dummy-data";
 
 function App() {
   const [listings, setListings] = useState([]);
-  const [filters, setFilter] = useState([]);
+  const [filters, setFilters] = useState([]);
 
   useEffect(() => {
     //simulate asynchronous API call
@@ -17,25 +17,22 @@ function App() {
     }, 200);
   }, []);
 
+  const addTagToFilter = (tag) => {
+    if (filters.indexOf(tag) !== -1) return;
+
+    const newFilters = [...filters, tag];
+    setFilters(newFilters);
+  };
+
+  const clearFilters = () => {
+    setFilters([]);
+  };
+
   return (
     <>
       <Header />
-      <FilterBar filters={filters} />
-      <button
-        onClick={() => {
-          setFilter(["test", "wow", "nice"]);
-        }}
-      >
-        Filter
-      </button>
-      <button
-        onClick={() => {
-          setFilter([]);
-        }}
-      >
-        Filter remove
-      </button>
-      <Jobs listings={listings} />
+      <FilterBar filters={filters} clearFilters={clearFilters} />
+      <Jobs listings={listings} addTag={addTagToFilter} filters={filters} />
     </>
   );
 }

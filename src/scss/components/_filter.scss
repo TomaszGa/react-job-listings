@@ -1,5 +1,9 @@
 .filter {
-  transform: translateY(-50px);
+  transform: translateY(-30px);
+  position: absolute;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
   &__bar {
     overflow: hidden;
     height: 0;

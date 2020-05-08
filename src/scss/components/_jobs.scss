@@ -27,6 +27,10 @@
   }
   &__logo {
     padding-right: 25px;
+    img {
+      height: 88px;
+      width: 88px;
+    }
   }
   &__tags {
     margin-left: auto;

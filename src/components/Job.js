@@ -1,11 +1,6 @@
 import React from "react";
 
-const Job = ({ data }) => {
-  const languages = data.languages || [];
-  const tools = data.tools || [];
-  const tagList = [data.role, data.level, ...languages, ...tools];
-  // console.log(tagList);
-
+const Job = ({ data, addTag, tagList }) => {
   const modifierClass = data.featured ? "job-listing--featured" : null;
 
   return (
@@ -27,7 +22,13 @@ const Job = ({ data }) => {
       </div>
       <div className="job-listing__tags">
         {tagList.map((tag) => (
-          <div className="job-listing__tag">{tag}</div>
+          <div
+            className="job-listing__tag"
+            key={tag}
+            onClick={() => addTag(tag)}
+          >
+            {tag}
+          </div>
         ))}
       </div>
     </div>

@@ -1,6 +1,6 @@
 import React from "react";
 
-const FilterBar = ({ filters }) => {
+const FilterBar = ({ filters, clearFilters }) => {
   const modifierClass = filters.length ? "filter--active" : null;
 
   return (
@@ -9,10 +9,14 @@ const FilterBar = ({ filters }) => {
         <div className="filter__bar-content">
           <div className="filter__tags">
             {filters.map((filter) => (
-              <div className="filter__tag">{filter}</div>
+              <div className="filter__tag" key={filter}>
+                {filter}
+              </div>
             ))}
           </div>
-          <div className="filter__clear">Clear</div>
+          <div className="filter__clear" onClick={() => clearFilters()}>
+            Clear
+          </div>
         </div>
       </div>
     </div>
