@@ -64,4 +64,17 @@
       background-color: $gray-dark-cyan;
     }
   }
+  &__clear {
+    color: $gray-cyan;
+    font-weight: $font-weight-bold;
+    font-family: inherit;
+    border: none;
+    background: none;
+    padding: 5px;
+    &:hover {
+      color: $primary;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
 }

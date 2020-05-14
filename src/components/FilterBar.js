@@ -24,9 +24,9 @@ const FilterBar = ({ filters, clearFilters, removeFilter }) => {
               </div>
             ))}
           </div>
-          <div className="filter__clear" onClick={() => clearFilters()}>
+          <button className="filter__clear" onClick={() => clearFilters()}>
             Clear
-          </div>
+          </button>
         </div>
       </div>
     </div>

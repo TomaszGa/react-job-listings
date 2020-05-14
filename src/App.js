@@ -24,15 +24,6 @@ function App() {
   //   "test12",
   //   "test13",
   //   "test14",
-  //   "test14",
-  //   "test14",
-  //   "test14",
-  //   "test14",
-  //   "test14",
-  //   "test14",
-  //   "test14",
-  //   "test14",
-  //   "test14",
   // ]);
 
   useEffect(() => {

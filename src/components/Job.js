@@ -6,12 +6,24 @@ const Job = ({ data, addTag, tagList }) => {
   return (
     <div className={`job-listing ${modifierClass ? modifierClass : ""}`}>
       <div className="job-listing__logo">
-        <img src={process.env.PUBLIC_URL + data.logo} />
+        <img
+          src={process.env.PUBLIC_URL + data.logo}
+          alt={`${data.company} Logo`}
+        />
       </div>
       <div className="job-listing__details">
         <div className="job-listing__company">
-          {data.company} {data.new ? <span>new</span> : null}
-          {data.featured ? <span>featured</span> : null}
+          {data.company}{" "}
+          {data.new ? (
+            <span className="job-listing__highlight job-listing__highlight--new">
+              <span>new!</span>
+            </span>
+          ) : null}
+          {data.featured ? (
+            <span className="job-listing__highlight job-listing__highlight--featured">
+              <span>featured</span>
+            </span>
+          ) : null}
         </div>
         <div className="job-listing__title">{data.position}</div>
         <div className="job-listing__meta">
