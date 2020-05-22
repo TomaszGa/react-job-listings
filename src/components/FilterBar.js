@@ -13,14 +13,15 @@ const FilterBar = ({ filters, clearFilters, removeFilter }) => {
             {filters.map((filter) => (
               <div className="filter__tag" key={filter}>
                 <div className="filter__tag-name">{filter}</div>
-                <div
+                <button
                   className="filter__tag-remove"
+                  aria-label={`remove ${filter} filter`}
                   onClick={() => {
                     removeFilter(filter);
                   }}
                 >
-                  <img src={closeButton} />
-                </div>
+                  <img src={closeButton} alt="close button" />
+                </button>
               </div>
             ))}
           </div>

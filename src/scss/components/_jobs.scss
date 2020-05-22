@@ -73,6 +73,10 @@
     font-weight: $font-weight-bold;
     margin-right: 15px;
     transition: 0.2s;
+
+    border: none;
+    font-family: inherit;
+    font-size: $font-size-body;
     &:last-child {
       margin-right: 0;
     }

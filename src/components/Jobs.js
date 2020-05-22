@@ -9,7 +9,7 @@ const Jobs = ({ listings, addTag, filters }) => {
         const tools = data.tools || [];
         const tagList = [data.role, data.level, ...languages, ...tools];
         for (let i = 0; i < filters.length; i++) {
-          if (tagList.indexOf(filters[i]) === -1) return;
+          if (tagList.indexOf(filters[i]) === -1) return null;
         }
         return (
           <Job

@@ -52,6 +52,7 @@
   }
   &__tag-remove {
     background-color: $primary;
+    border: none;
     color: #fff;
     padding: 4px;
     transition: 0.2s;
@@ -67,10 +68,11 @@
   &__clear {
     color: $gray-cyan;
     font-weight: $font-weight-bold;
+    font-size: $font-size-body;
     font-family: inherit;
     border: none;
     background: none;
-    padding: 5px;
+    padding: 10px;
     &:hover {
       color: $primary;
       text-decoration: underline;

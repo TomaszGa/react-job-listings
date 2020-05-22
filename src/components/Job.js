@@ -34,13 +34,13 @@ const Job = ({ data, addTag, tagList }) => {
       </div>
       <div className="job-listing__tags">
         {tagList.map((tag) => (
-          <div
+          <button
             className="job-listing__tag"
             key={tag}
             onClick={() => addTag(tag)}
           >
             {tag}
-          </div>
+          </button>
         ))}
       </div>
     </div>
