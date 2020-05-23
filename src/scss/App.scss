@@ -41,6 +41,9 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  @media (max-width: $breakpoint-mobile) {
+    background-position: right center;
+  }
 }
 
 @import "components/jobs";
