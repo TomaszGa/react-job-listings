@@ -7,31 +7,15 @@ import "./scss/App.scss";
 import dummyData from "./assets/data/dummy-data";
 
 function App() {
-  const [listings, setListings] = useState([]);
+  const [listings, setListings] = useState(dummyData);
   const [filters, setFilters] = useState([]);
-  // const [filters, setFilters] = useState([
-  //   "test1",
-  //   "test2",
-  //   "test3",
-  //   "test4",
-  //   "test5",
-  //   "test6",
-  //   "test7",
-  //   "test8",
-  //   "test9",
-  //   "test10",
-  //   "test11",
-  //   "test12",
-  //   "test13",
-  //   "test14",
-  // ]);
 
-  useEffect(() => {
-    //simulate asynchronous API call
-    setTimeout(() => {
-      setListings(dummyData);
-    }, 200);
-  }, []);
+  // useEffect(() => {
+  //   //simulate asynchronous API call
+  //   setTimeout(() => {
+  //     setListings(dummyData);
+  //   }, 200);
+  // }, []);
 
   const addTagToFilter = (tag) => {
     if (filters.indexOf(tag) !== -1) return;
