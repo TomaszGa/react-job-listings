@@ -42,7 +42,8 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   @media (max-width: $breakpoint-mobile) {
-    background-position: right center;
+    // background-position: right center;
+    background-image: url("../assets//ui/bg-header-mobile.svg");
   }
 }
 
