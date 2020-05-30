@@ -1,8 +1,8 @@
 import React from "react";
 
 const Job = ({ data, addTag, tagList }) => {
-  const modifierClass = data.featured ? "job-listing--featured" : null;
-
+  const modifierClass = data.featured && "job-listing--featured";
+  console.log(modifierClass);
   return (
     <div className={`job-listing ${modifierClass ? modifierClass : ""}`}>
       <div className="job-listing__logo">

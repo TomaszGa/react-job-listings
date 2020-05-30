@@ -3,8 +3,8 @@ import React from "react";
 import closeButton from "../assets/ui/icon-x.png";
 
 const FilterBar = ({ filters, clearFilters, removeFilter }) => {
-  const modifierClass = filters.length ? "filter--active" : null;
-
+  const modifierClass = filters.length && "filter--active";
+  console.log(modifierClass);
   return (
     <div className={`filter ${modifierClass ? modifierClass : ""}`}>
       <div className="filter__bar">
