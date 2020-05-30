@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import Header from "./components/Header";
 import Jobs from "./components/Jobs";
 import FilterBar from "./components/FilterBar";
@@ -9,13 +9,6 @@ import dummyData from "./assets/data/dummy-data";
 function App() {
   const [listings, setListings] = useState(dummyData);
   const [filters, setFilters] = useState([]);
-
-  // useEffect(() => {
-  //   //simulate asynchronous API call
-  //   setTimeout(() => {
-  //     setListings(dummyData);
-  //   }, 200);
-  // }, []);
 
   const addTagToFilter = (tag) => {
     if (filters.indexOf(tag) !== -1) return;
