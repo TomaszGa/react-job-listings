@@ -6,12 +6,12 @@ const FilterBar = ({ filters, clearFilters, removeFilter }) => {
   const modifierClass = filters.length && "filter--active";
   console.log(modifierClass);
   return (
-    <div className={`filter ${modifierClass ? modifierClass : ""}`}>
+    <section className={`filter ${modifierClass ? modifierClass : ""}`}>
       <div className="filter__bar">
         <div className="filter__bar-content">
-          <div className="filter__tags">
+          <ul className="filter__tags">
             {filters.map((filter) => (
-              <div className="filter__tag" key={filter}>
+              <li className="filter__tag" key={filter}>
                 <div className="filter__tag-name">{filter}</div>
                 <button
                   className="filter__tag-remove"
@@ -22,15 +22,15 @@ const FilterBar = ({ filters, clearFilters, removeFilter }) => {
                 >
                   <img src={closeButton} alt="close button" />
                 </button>
-              </div>
+              </li>
             ))}
-          </div>
+          </ul>
           <button className="filter__clear" onClick={() => clearFilters()}>
             Clear
           </button>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

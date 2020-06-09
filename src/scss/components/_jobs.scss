@@ -3,6 +3,11 @@
   max-width: 100%;
   margin: 76px auto 0 auto;
   padding: 0 25px;
+  ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+  }
 }
 
 .job-listing {
@@ -86,40 +91,57 @@
     }
   }
   &__tags {
-    margin-left: auto;
-    padding-left: 40px;
-    display: flex;
-    flex-wrap: wrap;
+    margin: 0 0 0 auto;
     @media (max-width: $breakpoint-mobile) {
       margin-left: 0;
-      padding: 10px 0 0 0;
-      margin: 10px 0 0 0;
-      border-top: 1px solid $gray-cyan;
+    }
+
+    ul {
+      padding: 0 0 0 40px;
+      display: flex;
+      flex-wrap: wrap;
+
+      list-style-type: none;
+
+      @media (max-width: $breakpoint-mobile) {
+        margin-left: 0;
+        padding: 10px 0 0 0;
+        margin: 10px 0 0 0;
+        border-top: 1px solid $gray-cyan;
+      }
     }
   }
   &__tag {
-    padding: 9px 8px;
-    background-color: $gray-filter;
-    color: $primary;
-    border-radius: 4px;
-    font-weight: $font-weight-bold;
     margin: 5px 17px 5px 0;
-    transition: 0.2s;
 
-    border: none;
-    font-family: inherit;
-    font-size: 13px;
     @media (max-width: $breakpoint-mobile) {
       margin: 9px 15px 8px 0;
     }
     &:last-child {
       margin-right: 0;
     }
+  }
+
+  &__tag-button {
+    padding: 9px 8px;
+    background-color: $gray-filter;
+    color: $primary;
+    border-radius: 4px;
+    font-weight: $font-weight-bold;
+    transition: 0.2s;
+    border: none;
+    font-family: inherit;
+    font-size: 13px;
     &:hover {
       cursor: pointer;
       background-color: $primary;
       color: $gray-filter;
     }
+  }
+  &__meta {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
   }
   &__meta-item {
     display: inline-block;
