@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/react-job-listings/static/css/main.8a06ccfa.chunk.css",
-    "main.js": "/react-job-listings/static/js/main.06703a58.chunk.js",
-    "main.js.map": "/react-job-listings/static/js/main.06703a58.chunk.js.map",
+    "main.css": "/react-job-listings/static/css/main.bba5d796.chunk.css",
+    "main.js": "/react-job-listings/static/js/main.41d512e6.chunk.js",
+    "main.js.map": "/react-job-listings/static/js/main.41d512e6.chunk.js.map",
     "runtime-main.js": "/react-job-listings/static/js/runtime-main.06dcdb00.js",
     "runtime-main.js.map": "/react-job-listings/static/js/runtime-main.06dcdb00.js.map",
     "static/js/2.00dba496.chunk.js": "/react-job-listings/static/js/2.00dba496.chunk.js",
     "static/js/2.00dba496.chunk.js.map": "/react-job-listings/static/js/2.00dba496.chunk.js.map",
     "index.html": "/react-job-listings/index.html",
-    "precache-manifest.5c5cc3eb935c30c190c6f8438fc77ff2.js": "/react-job-listings/precache-manifest.5c5cc3eb935c30c190c6f8438fc77ff2.js",
+    "precache-manifest.1dbe98c322ec54b1c4918c018abc8862.js": "/react-job-listings/precache-manifest.1dbe98c322ec54b1c4918c018abc8862.js",
     "service-worker.js": "/react-job-listings/service-worker.js",
-    "static/css/main.8a06ccfa.chunk.css.map": "/react-job-listings/static/css/main.8a06ccfa.chunk.css.map",
+    "static/css/main.bba5d796.chunk.css.map": "/react-job-listings/static/css/main.bba5d796.chunk.css.map",
     "static/js/2.00dba496.chunk.js.LICENSE.txt": "/react-job-listings/static/js/2.00dba496.chunk.js.LICENSE.txt",
     "static/media/App.scss": "/react-job-listings/static/media/bg-header-mobile.6b5ff5a0.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.06dcdb00.js",
     "static/js/2.00dba496.chunk.js",
-    "static/css/main.8a06ccfa.chunk.css",
-    "static/js/main.06703a58.chunk.js"
+    "static/css/main.bba5d796.chunk.css",
+    "static/js/main.41d512e6.chunk.js"
   ]
 }
